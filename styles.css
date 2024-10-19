@@ -1,0 +1,160 @@
+/* REMOVE DEFAULT STYLING */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SKIP LINK */
+.skip-link {
+    position: absolute;
+	left: -1000px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    color: #FFFFFF;
+}
+
+/* NAV BAR */
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+
+.navbar .logo {
+    text-align: center;
+}
+
+.navbar .logo img {
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #407AFF;
+    text-underline-offset: 0.5rem;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    gap: 5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+footer img {
+    max-width: 30px;
+    height: auto;
+}
+
+.footer-email, .footer-linkedin {
+    display: flex;
+    align-items: center;
+
+}
+
+/* ABOUT PAGE */
+.about-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+
+.headshot {
+    max-width: 45vh;
+    height: auto;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+.about-header h1 {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.about-role {
+    font-size: 20px;
+    color: #407AFF;
+}
+
+.about-bio p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.example-services, .past-projects {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.about-services-header, .about-projects-header {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #407AFF;
+}
+
+.about-services-list, .about-projects-list {
+    padding-left: 1.5rem;
+}
+
+.about-services-list li, .about-projects-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* SERVICES PAGE */
+
+/* TESTIMONIALS PAGE */
+
+/* CONTACT PAGE */

@@ -16,12 +16,36 @@
                 <a href="about.html">
                     <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="logofull">
                 </a>
-                <ul class="nav-links">
+            </div>
+            <ul class="nav-links">
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="testimonials.html">TESTIMONIALS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="about.html">
+                    <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="ham-logofull">
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+                        <li><a href="services.html" onclick="toggleMenu()">SERVICES</a></li>
+                        <li><a href="testimonials.html" onclick="toggleMenu()">TESTIMONIALS</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -102,5 +126,6 @@
             <a href="www.linkedin.com/in/charlesscrase/">LinkedIn</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

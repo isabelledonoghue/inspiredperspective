@@ -15,34 +15,66 @@
                 <a href="about.html">
                     <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="logofull">
                 </a>
-                <ul class="nav-links">
+            </div>
+            <ul class="nav-links">
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="testimonials.html">TESTIMONIALS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="about.html">
+                    <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="ham-logofull">
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+                        <li><a href="services.html" onclick="toggleMenu()">SERVICES</a></li>
+                        <li><a href="testimonials.html" onclick="toggleMenu()">TESTIMONIALS</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main id="main">
         <div class="contact-content">
             <h1 class="contact-header">Contact Form</h1>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-    
-                <label for="organization">Organization:</label>
-                <input type="text" id="organization" name="organization">
-    
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-    
-                <label for="message">How can I help?</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-    
+            <form
+                action="https://formspree.io/f/xqakpday"
+                method="POST"
+            >
+                <label>
+                    Name:
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    Organization:
+                    <input type="text" name="organization">
+                </label>
+                <label>
+                    Phone Number:
+                    <input type="tel" name="phone">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    How can I help?
+                    <textarea name="message"></textarea>
+                </label>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -62,5 +94,6 @@
             <a href="www.linkedin.com/in/charlesscrase/">LinkedIn</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

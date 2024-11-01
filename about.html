@@ -16,12 +16,36 @@
                 <a href="about.html">
                     <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="logofull">
                 </a>
-                <ul class="nav-links">
+            </div>
+            <ul class="nav-links">
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="testimonials.html">TESTIMONIALS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="about.html">
+                    <img src="assets/insper-logofull.png" alt="Inspired Perspective Logo" class="ham-logofull">
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+                        <li><a href="services.html" onclick="toggleMenu()">SERVICES</a></li>
+                        <li><a href="testimonials.html" onclick="toggleMenu()">TESTIMONIALS</a></li>
+                        <li><a href="contact.html" onclick="toggleMenu()">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
@@ -30,7 +54,7 @@
         <div class="about-header">
             <img src="assets/headshot.png" alt="Charles Scrase headshot" class="headshot">
             <div class="about-bio">
-                <h1 class="about-header">Charles Scrase</h1>
+                <h1 class="about-name">Charles Scrase</h1>
                 <h2 class="about-role">Strategic Advisor</h2>
                 <p class="about-bio">Charles is an experienced business leader, with 15 years of strategy, sales, operations and marketing experience at Google, where he built sales and operations organizations from the ground up.  He has significant experience building and leading teams, having managed global, regional and national teams across dozens of countries and offices, as well as having led the 500 person Google Ann Arbor office for more than five years.</p>
                 <p class="about-bio">Charles particularly enjoys helping teams define their vision and strategy, and then build the required business systems and processes to execute effectively.  He has helped a variety of organizations at Google and beyond achieve a high level of performance by focusing on developing strategy, building strong organization culture, defining clear operational principles and helping teams hold themselves accountable.</p>
@@ -80,5 +104,6 @@
             <a href="https://www.linkedin.com/in/charlesscrase/">LinkedIn</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

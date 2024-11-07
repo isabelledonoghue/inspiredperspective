@@ -97,6 +97,7 @@ html {
 }
 
 .menu-links {
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -105,7 +106,7 @@ html {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-right: -20px;
     padding-bottom: 10px;
 }
@@ -126,6 +127,7 @@ html {
 }
 
 .menu-links.open {
+    display: block;
     max-height: 300px;
 }
 
@@ -193,7 +195,6 @@ footer img {
 .about-bio-p {
     margin: 1rem 3rem;
     line-height: 1.6;
-
 }
 
 .about-content {
@@ -389,7 +390,6 @@ button:hover {
     .all-service-projects {
         max-width: 80%;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -401,18 +401,19 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 60px;
+        padding-right: 40px;
         padding-left: 40px;
     }
     .menu-links {
+        background-color: black;
         flex-direction: column;
         gap: 0.5rem;
-        text-align: center;
+        text-align: center;        
     }
     .ham-logofull {
-        width: 300px;
+        width: 75%;
+        max-width: 100%;
     }
-
     .about-header {
         display: block;
     }
@@ -430,10 +431,15 @@ button:hover {
         margin-right: auto;
         margin-bottom: 20px;
     }
+    .about-bio-p {
+        margin: 0.5rem 0rem;
+        line-height: 1.6;
+    }
     .about-content {
         display: block;
+        margin: 0;
+        padding: 0;
     }
-
     .testimonial-container {
         display: flex;
         flex-direction: column;
@@ -456,7 +462,8 @@ button:hover {
         max-width: 90%;
     }
     .contact-content {
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
     }
     footer {
         display: flex;

@@ -383,18 +383,21 @@ button:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
+    .headshot {
+        max-width: 30vh;
+    }
     .all-service-projects {
         max-width: 80%;
     }
 
 }
 
-
 @media (max-width: 768px) {
     .navbar {
         display: none;
     }
     #hamburger-nav {
+        background: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -407,7 +410,7 @@ button:hover {
         text-align: center;
     }
     .ham-logofull {
-        width: 400px;
+        width: 300px;
     }
 
     .about-header {
@@ -455,4 +458,12 @@ button:hover {
     .contact-content {
         width: 90%;
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
 }

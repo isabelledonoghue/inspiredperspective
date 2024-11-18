@@ -1,0 +1,64 @@
+backend:
+  name: github
+  repo: isabelledonoghue/inspiredperspective
+  branch: master  # branch to edit
+
+media_folder: "assets/images/uploads"  # where images are uploaded
+public_folder: "/images/uploads"  # public path for images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Content", name: "main_content", widget: "markdown" }
+          - label: "Bio"
+            name: "bio"
+            widget: "list"
+            field:
+              label: "Paragraph"
+              name: "paragraph"
+              widget: "text"
+          - label: "Past Projects"
+            name: "past_projects"
+            widget: "list"
+            field:
+              label: "Project Description"
+              name: "project"
+              widget: "string"
+          - label: "Example Services"
+            name: "example_services"
+            widget: "list"
+            field:
+              label: "Service Description"
+              name: "service"
+              widget: "string"
+
+      - label: "Services Page"
+        name: "services"
+        file: "services.html"
+        fields:
+          - label: "Service Projects"
+            name: "service_projects"
+            widget: "list"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Service Details", name: "details", widget: "list", field: { label: "Detail", name: "detail", widget: "string" } }
+
+      - label: "Testimonials Page"
+        name: "testimonials"
+        file: "testimonials.html"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Message", name: "message", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image" }

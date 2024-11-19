@@ -10,7 +10,12 @@ backend:
   repo: isabelledonoghue/inspiredperspective
   branch: master  # branch to edit
   auth_endpoint: https://github.com/login/oauth/authorize
-  api_url: https://api.github.com
+  client_id: "Ov23liyVscrW23B86fXA"
+  client_secret: "24901b76effd8fc4223abb0c69bb2ed0c00a8bb9" 
+  oauth:
+    authorize_url: "https://github.com/login/oauth/authorize"
+    token_url: "https://github.com/login/oauth/access_token"
+    redirect_uri: "https://isabelledonoghue.github.io/inspiredperspective/admin/"
 
 media_folder: "assets/images/uploads"  # where images are uploaded
 public_folder: "/images/uploads"  # public path for images

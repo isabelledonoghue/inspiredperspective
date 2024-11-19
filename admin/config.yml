@@ -9,6 +9,8 @@ backend:
   name: github
   repo: isabelledonoghue/inspiredperspective
   branch: master  # branch to edit
+  auth_endpoint: https://github.com/login/oauth/authorize
+  api_url: https://api.github.com
 
 media_folder: "assets/images/uploads"  # where images are uploaded
 public_folder: "/images/uploads"  # public path for images
